@@ -1,0 +1,189 @@
+body {
+    grid-template-areas: "header header header"
+        "main main main"
+        "footer footer footer";
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: auto;
+    background-color: #eae1cb;
+    overflow-x: hidden;
+    margin: 0;
+    width: 100%;
+    font-size: 17px;
+}
+html, body{
+    overflow-x: hidden;
+}
+.police{
+    font-family: 'Arial', sans-serif;
+}   
+header {
+    grid-area: header;
+    background-color: #77a8a8;
+}
+
+main {
+    grid-area: main;
+}
+.logo {
+    width: auto;
+    object-fit: contain;
+    height: auto;
+}
+@media (min-width: 366px) {
+    .notremove {
+        font-size: 0px;
+        width: 0px;
+    }
+}
+
+@media (min-width: 401px) {
+    .logo {
+        width: auto;
+        height: auto;
+    }
+
+    .notremove {
+        font-size: 0px;
+        width: 0px;
+    }
+}
+
+@media (max-width: 365px) {
+    .remove {
+        font-size: 0px;
+        width: 0px;
+    }
+}
+
+@media (max-width: 350px) {
+    .remove {
+        font-size: 0px;
+        width: 0px;
+    }
+
+    .notremove {
+        font-size: 0px;
+        width: 0px;
+    }
+}
+@media (max-width: 500px) {
+.colonne{
+    padding: 0.5rem;
+}
+.maNav{
+    height: 70px;
+}
+}
+@media (min-width: 500px) {
+    .ul{
+          display: flex;
+          gap: 25px;
+    }
+    .no-gap{
+       margin-left: -25px;
+    }
+    .colonne{
+        padding: 0.5rem;
+    }
+    .maNav{
+        height: 60px;
+    }
+    .logo{
+        height: 50px;
+    }
+    .offcanvas{
+        width: 40% !important;
+    }
+}
+@media (max-width: 355px) {
+.ul{
+    margin-right: 10px;
+}
+}
+.h5{
+    font-size: 20px;
+}
+footer {
+    grid-area: footer;
+    background-color: #77a8a8;
+}
+.rx{
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    gap: 20px;
+    justify-content: center;
+}
+.eo{
+    object-fit: cover;
+    height: 300px;
+    width: 100%;
+}
+.eoo{
+    object-fit: cover;
+    height: 250px;
+    width: 100%;
+}
+.texte {
+      opacity: 0;
+      transform: translateY(30px); /* légèrement vers le bas */
+      transition: opacity 0.8s ease, transform 0.8s ease;
+    }
+
+    /* La classe qui déclenche l'apparition */
+.visible {
+      opacity: 1;
+      transform: translateY(0);
+    }
+.anim1{
+  opacity: 0;            /* invisible */
+  transform: translateX(-50px); /* décalée vers le bas */
+  transition: all 1s ease;    /* animation */
+}
+.anim2{
+  opacity: 0;            /* invisible */
+  transform: translateX(50px); /* décalée vers le bas */
+  transition: all 1s ease;    /* animation */
+}
+.anim3{
+  opacity: 0;            /* invisible */
+  transform: translateY(40px); /* décalée vers le bas */
+  transition: all 800ms ease;    /* animation */
+}
+
+.image-visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+.boutton{
+        font-size: 17px;
+}
+.boutton:hover{
+    cursor: pointer;
+    transform: scale(1.013);
+    font-size: 17.5px;
+}
+@media (min-width: 500px){
+center{
+    font-size: 20px;
+}
+.eo{
+    object-fit: cover;
+    width: 100vw;
+    height: 100vh !important;
+}
+.anim1{
+    object-fit: cover;
+    width: 100vw;
+    height: 100vh !important;
+}
+.anim2{
+    object-fit: cover;
+    width: 100vw;
+    height: 50vh !important;
+}
+.eoo{
+    object-fit: cover;
+    width: 100%;
+    height: 80vh !important;
+}
+}

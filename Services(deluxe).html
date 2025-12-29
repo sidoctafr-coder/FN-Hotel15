@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8"
+    crossorigin="anonymous"></script>
+  <script src="https://kit.fontawesome.com/54b83983ca.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="Services(deluxe).css">
+</head>
+
+<body>
+   <header>
+        <div class="row g-0 align-items-center maNav">
+            <div class=" text-center col-2 colonne">
+                <img src="Logo.png" alt="" class="logo img-fluid rounded-circle">
+            </div>
+            <nav class="navbar navbar-expand col-10">
+                <div class="container contain text-center align-items-center col-auto">
+                    <div class="row justify-content-center">
+                        <ul class="navbar-nav ul">
+                            <li class="nav-item"><a href="Page d'accueil.html" class="nav-link">Accueil</a></li>
+                            <li class="nav-item"><a href="Services(deluxe).html" class="nav-link active">Hébergement</a></li>
+                            <li class="nav-item"><a href="Moncompte.html" class="nav-link">Profil</a></li>
+                            <div class="no-gap"><li class="nav-item notremove"><a href="Synopsis.html" class="nav-link">Apreçu</a></li></div>
+                            <li class="nav-item remove"><a href="Synopsis.html" class="nav-link">Synopsis</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </div>
+        <div class="container border-secondary border w-75 "></div>
+
+    </header>
+  <div style="height: 5px;"></div>
+  <main>
+    <nav class="navbar navbar-light "><button class="navbar-toggler col-2 border-0 shadow-none  fw-bold pt-0 fs-4" type="button"
+        data-bs-toggle="offcanvas" data-bs-target="#offcanvasMenu" aria-controls="offcanvasWithBothOptions"><span
+          class="navbar-toggler-icon"></span></button>
+      <button class="btn bg-0 border-0 col-10" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasMenu"
+        aria-controls="offcanvasWithBothOptions"> <i>
+          <p class="fw-bold h2 text-start catal" id="titre">Catalogue de chambres</p>
+        </i></button>
+    </nav>
+
+
+    <div style="background-color: #77a8a8;" class="offcanvas offcanvas-start  rounded bg-opacity-75 w-50"
+      id="offcanvasMenu" data-bs-scroll="true" tabindex="-1" id="offcanvasWithBothOptions"
+      aria-labelledby="offcanvasWithBothOptionsLabel">
+      <div class="offcanvas-header d-flex justify-content-center h3 policed">
+        <b>Catégories</b>
+      </div>
+      <div class="bg-dark w-75 mx-auto" style="height: 1.25px;"></div>
+      <br>
+      <a href="Services(standard).html" class="nav-link">
+        <div style="font-size: 17px;"
+          class="classes border border-secondary border-end-0 d-flex align-items-center px-3">
+          <span class="police">Standard</span><br><br>
+        </div>
+      </a>
+      <a href="Services(deluxe).html" class="nav-link">
+        <div style="font-size: 17px;"
+          class="classes bg-secondary bg-opacity-25 border-secondary border-end-0 d-flex align-items-center px-3"><span
+            class="fw-bold police">Premium</span><br><br></div>
+      </a>
+      <a href="Services(premium).html" class="nav-link">
+        <div style="font-size: 17px;"
+          class="classes border border-secondary border-end-0 d-flex align-items-center px-3">
+          <span class="police">Deluxe</span><br><br>
+        </div>
+      </a>
+      <a href="Avantages.html" class="nav-link">
+        <div style="font-size: 17px;"
+          class="classes border border-secondary border-top-0 border-end-0 d-flex align-items-center px-3">
+          <span class="police">FN Collection</span><br><br>
+        </div>
+      </a>
+       <a href="RéservationTiers.html" class="nav-link">
+        <div style="font-size: 17px;"
+          class="classes border border-secondary border-top-0 border-end-0 d-flex align-items-center px-3">
+          <span class="police">Réservation Tiers</span><br><br>
+        </div>
+      </a>
+    </div>
+
+<div class="box">
+    <div class="card   bg-transparent shadow">
+      <div class="row align-items-center">
+        <div class="col-6"><img class="eo carte img-fluid rounded" src="deluxe.jpg" alt=""></div>
+        <div class="barre d-flex col-auto my-auto">
+          <div class="vr"></div>
+        </div>
+        <div class="col-5 card-body text-center">
+          <p class="h5">Chambre n<sup>°</sup>A37 </p>
+          <p class="text-center">Envie de changer de cadre, cette chambre aux couleurs sombres sublime vos longs séjours.</p>
+          <i class="fw-bold mx-2 prix">Prix:150000fcfa</i>
+          <div class="spacer"></div>
+          <center><a href="Réservation.html?source=chambres" onclick="showSection('chambres')" type="button" class="btn fw-bold btn-outline-secondary">Réserver</a></center>
+        </div>
+      </div>
+    </div>
+
+    <br>
+    <div class="card bg-transparent shadow">
+      <div class="row align-items-center">
+        <div class="col-6"><img class="eo carte img-fluid rounded-2 p-1" src="deluxe1.jpg" alt=""></div>
+        <div class="barre d-flex col-auto my-auto">
+          <div class="vr"></div>
+        </div>
+        <div class="col-5 card-body text-center">
+          <p class="h5">Chambre n<sup>°</sup>A41 </p>
+          <p class="word-brea">Cet écrin à perte de vue urbaine a de quoi décupler votre créativité.</p>
+          <i class="fw-bold mx-2">Prix:150000fcfa</i>
+          <div class="spacer"></div>
+          <center><a href="Réservation.html?source=chambres" onclick="showSection('chambres')" type="button" class="btn fw-bold btn-outline-secondary">Réserver</a></center>
+        </div>
+      </div>
+    </div>
+
+    <br>
+    <div class="card bg-transparent shadow">
+      <div class="row align-items-center">
+        <div class="col-6"><img class="eo carte img-fluid rounded" src="deluxe2.jpg" alt=""></div>
+        <div class="barre d-flex col-auto my-auto">
+          <div class="vr"></div>
+        </div>
+        <div class="col-5 card-body text-center">
+          <p class="h5">Chambre n<sup>°</sup>A10</p>
+          <p class="word-brea">Suite élégante avec lit king-size pour binômes, de quoi passer des moments inoubliables.</p>
+          <i class="fw-bold mx-2">150000fcfa</i>
+          <div class="spacer"></div>
+          <center><a href="Réservation.html?source=chambres" onclick="showSection('chambres')" type="button" class="btn fw-bold btn-outline-secondary">Réserver</a></center>
+        </div>
+      </div>
+    </div>
+
+    <br>
+    <div class="card bg-transparent shadow">
+      <div class="row align-items-center">
+        <div class="col-6"><img class="eo carte img-fluid rounded" src="deluxe3.jpg" alt=""></div>
+        <div class="barre d-flex col-auto my-auto">
+          <div class="vr"></div>
+        </div>
+        <div class="col-5 card-body text-center">
+          <p class="h5">Chambre n<sup>°</sup>A23</p>
+          <p class="word-brea">Cette chambre avec dressing ravive votre vogage professionnel.</p>
+          <i class="fw-bold mx-2">Prix:150000fcfa</i>
+          <div class="spacer"></div>
+          <center><a href="Réservation.html?source=chambres" onclick="showSection('chambres')" type="button" class="btn fw-bold btn-outline-secondary">Réserver</a></center>
+        </div>
+      </div>
+    </div>
+
+    <br>
+    <div class="card bg-transparent shadow">
+      <div class="row align-items-center">
+        <div class="col-6 "><img class="eo carte img-fluid rounded" src="deluxe4.jpg" alt=""></div>
+        <div class="barre d-flex col-auto my-auto">
+          <div class="vr"></div>
+        </div>
+        <div class="col-4 card-body text-center">
+          <p class="h5">Chambre n<sup>°</sup>A05</p>
+          <p class="word-brea">Cette chambre avec panorama urbain possède de quoi façonner vos idées.</p>
+          <i class="fw-bold mx-2">Prix:150000fcfa</i>
+          <div class="spacer"></div>
+          <center><a href="Réservation.html?source=chambres" onclick="showSection('chambres')" type="button" class="btn fw-bold btn-outline-secondary">Réserver</a></center>
+        </div>
+      </div>
+    </div>
+
+    <br>
+    <div class="card bg-transparent shadow">
+      <div class="row align-items-center">
+        <div class="col-6"><img class="eo carte img-fluid rounded" src="deluxe5.jpg" alt=""></div>
+        <div class="barre d-flex col-auto my-auto">
+          <div class="vr"></div>
+        </div>
+        <div class="col-5 card-body text-center">
+          <p class="h5">Chambre n<sup>°</sup>A17</p>
+          <p class="word-brea">Cet havre de paix vous offre un tête-à-tête avec la mer, parfait pour un cadre des plus relaxants.</p>
+          <i class="fw-bold mx-2">Prix:150000fcfa</i>
+          <div class="spacer"></div>
+          <center><a href="Réservation.html?source=chambres" onclick="showSection('chambres')" type="button" class="btn fw-bold btn-outline-secondary">Réserver</a></center>
+        </div>
+      </div>
+    </div>
+
+    <br>
+    <div class="card bg-transparent shadow seul">
+      <div class="row align-items-center">
+        <div class="col-6"><img class="eo carte img-fluid rounded" src="deluxe7.jpg" alt=""></div>
+        <div class="barre d-flex col-auto my-auto">
+          <div class="vr"></div>
+        </div>
+        <div class="col-5 card-body text-center">
+          <p class="h5">Chambre n<sup>°</sup>A26</p>
+          <p class="word-brea">Vous êtes d'un genre festif, cette chambre ulta lumineuse a de quoi illuminer vos soirées.</p>
+          <i class="fw-bold mx-2">Prix:150000fcfa</i>
+          <div class="spacer"></div>
+          <center><a href="Réservation.html?source=chambres" onclick="showSection('chambres')" type="button" class="btn fw-bold btn-outline-secondary">Réserver</a></center>
+        </div>
+      </div>
+    </div>
+
+    <br>
+    <div class="card bg-transparent shadow">
+      <div class="row align-items-center">
+        <div class="col-6"><img class="eo carte img-fluid rounded" src="deluxe8.jpg" alt=""></div>
+        <div class="barre d-flex col-auto my-auto">
+          <div class="vr"></div>
+        </div>
+        <div class="col-5 card-body text-center">
+          <p class="h5">Chambre n<sup>°</sup>A14</p>
+          <p class="word-brea">Cette suite avec confort audiovisuel intégré vous offre un horizon verdoyant propice à la détente.</p>
+          <i class="fw-bold mx-2">Prix:150000fcfa</i>
+          <div class="spacer"></div>
+            <center><a href="Réservation.html?source=chambres" onclick="showSection('chambres')" type="button" class="btn fw-bold btn-outline-secondary">Réserver</a></center>
+        </div>
+      </div>
+    </div>
+
+</div>
+
+
+
+
+
+
+
+    <i class="text-muted">Nb: Toutes les chambres présentées sont disponibles, celles non disponibles sont immédiatement
+      retirées du site.
+      <br>Les prix concernent une demie journée par chambre.
+    </i>
+    <br><br><br>
+  </main>
+
+
+
+  <footer>
+    <div class=" d-flex text-muted">
+      <span class="col-6 text-center">Mentions légales</span>
+      <span class="col-6 text-center">Account&Privacy</span>
+    </div>
+    <div style="height: 5px;"></div>
+    <div class=" d-flex text-muted align-items-center">
+      <span class="col-12 text-center">Politique de confidentialité</span>
+    </div>
+    <div style="height: 5px;"></div>
+    <div class=" d-flex text-muted">
+      <span class="col-6 text-center">&copy;FN Hôtel</span>
+            <span class="col-6 text-center fw-bold "><a href="Services(deluxe).html" class="nav-link">Réserver</a></span>
+    </div>
+    <div style="height: 5px;"></div>
+    <div class="container rx  text-muted">
+      <a href="https://wa.me/237658663943" class="nav-link "><i class="fa-brands fa-whatsapp fa-xl"></i></a>
+      <a href="https://instagram.com/f.neil10" class="nav-link "><i class="fa-brands fa-instagram fa-xl"></i></a>
+      <a href="mailto:sidoctafr@gmail.com" class="nav-link "><i class="fa-brands fa-google fa-lg"></i></a>
+    </div>
+  </footer>
+
+  <script>
+    let startX = 0;
+
+    document.addEventListener("touchstart", e => {
+      startX = e.touches[0].clientX;
+    });
+
+    document.addEventListener("touchend", e => {
+      let endX = e.changedTouches[0].clientX;
+
+      // Swipe gauche → droite, sur les 30px du bord
+      if (startX < 120 && endX - startX > 60) {
+        let offcanvas = new bootstrap.Offcanvas(
+          document.getElementById("offcanvasMenu")
+        );
+        offcanvas.show();
+      }
+    });
+  </script>
+</body>
+
+</html>

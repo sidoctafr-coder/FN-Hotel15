@@ -1,0 +1,146 @@
+body {
+    grid-template-areas: "header header header"
+        "main main main"
+        "footer footer footer";
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: auto;
+    background-color: #eae1cb;
+    overflow-x: hidden;
+    margin: 0;
+    width: 100%;
+}
+html, body{
+    overflow-x: hidden;
+}
+.navbar-toggler{
+    transform: scale(1.2);
+}
+.btn:hover{
+    transform: scale(1.1);
+    animation-duration: 5ms;
+}
+.navbar-toggler-icon:hover{
+    transform: scale(1.05);
+}
+
+header {
+    grid-area: header;
+    background-color: #77a8a8;
+}
+
+main {
+    grid-area: main;
+}
+.logo {
+    width: auto;
+    object-fit: contain;
+    height: auto;
+}
+@media (max-width: 400px) {
+    .navbar-expand {
+        font-size: 16px;
+    }
+}
+@media (min-width: 399px) {
+    .notremove{
+        font-size: 0px;
+        width: 0px;
+    }
+}
+
+@media (min-width: 401px) {
+    .navbar-expand {
+        font-size: 16px;
+    }
+}
+@media (min-width: 401px) {
+    .logo {
+        width: auto;
+        height: auto;
+    }
+    .notremove{
+        font-size: 0px;
+        width: 0px;
+    }
+}
+
+@media (max-width: 365px) {
+    .remove{
+        font-size: 0px;
+        width: 0px;
+    }
+}
+@media (max-width: 350px) {
+    .remove{
+        font-size: 0px;
+        width: 0px;
+    }
+    .notremove{
+        font-size: 0px;
+        width: 0px;
+    }
+    .navbar-expand{
+        gap: 10px;
+    }
+}
+@media (max-width: 500px) {
+.colonne{
+    padding: 0.5rem;
+}
+.maNav{
+    height: 70px;
+}
+.pass{
+    margin-left: 1rem;
+    margin-right: 1rem;
+}
+}
+@media (min-width: 500px) {
+    .ul{
+          display: flex;
+          gap: 25px;
+    }
+    .colonne{
+        padding: 0.5rem;
+    }
+    .no-gap{
+       margin-left: -25px;
+    }
+    .maNav{
+        height: 60px;
+    }
+    .logo{
+        height: 50px;
+    }
+    .pass{
+        margin-left: 25%;
+        margin-right: 25%;
+        font-size: 17px;
+        text-align: center;
+        width: 50%;
+    }
+    .lead{
+        text-align: center;
+    }
+    .offcanvas{
+        width: 40% !important;
+    }
+}
+@media (max-width: 355px) {
+.ul{
+    margin-right: 10px;
+}
+}
+.h5{
+    font-size: 20px;
+}
+footer {
+    grid-area: footer;
+    background-color: #77a8a8;
+}
+.rx{
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    gap: 20px;
+    justify-content: center;
+}

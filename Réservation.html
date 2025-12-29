@@ -1,0 +1,686 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <script src="https://kit.fontawesome.com/54b83983ca.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="Réservation.css">
+</head>
+
+<body>
+    <header>
+        <div class="row g-0 align-items-center">
+            <div class="container  text-center" style="width: 20%;"><img style="width: auto; height: 40px;"
+                    src="Logo.png" alt="" class="logo p-0 img-fluid rounded-circle"></div>
+            <nav class="navbar navbar-expand col d-flex" style="height: 50px;">
+                <div class="container text-center align-items-center col-auto">
+                    <div class="row justify-content-center ">
+                        <ul class="navbar-nav">
+                            <li class="nav-item"><a href="Page d'accueil.html" class="nav-link">Accueil</a></li>
+                            <li class="nav-item"><a href="Réservation.html"
+                                    class="nav-link active">Réservation</a>
+                            </li>
+                            <li class="nav-item"><a href="Moncompte.html" class="nav-link">Profil</a></li>
+                            <li class="nav-item notremove"><a href="Synopsis.html" class="nav-link">Aperçu</a></li>
+                            <li class="nav-item remove"><a href="Synopsis.html" class="nav-link">Synopsis</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </div>
+        <div class="container border-secondary border w-75 "></div>
+
+    </header>
+    <main>
+        <br>
+        <h2 class="text-center">&copy;FN Hôtel</h2>
+        <h6 class="text-center text-muted text-dark">47 Rue Louis Pasteur, Reims
+        </h6>
+
+        <br>
+        <center>
+            <div class="container m-1 rounded w-75 bg-gradient" style="background-color: #77a8a8;;"><i
+                    class="fa-solid fa-circle-info" style="color: #eae1cb;"></i>Vous y êtes presque! Remplissez les
+                informations du
+                formulaire.
+            </div>
+        </center>
+        <br>
+        <form class="form-control rounded border-0" style="background-color: #eae1cb;">
+            <div class="col-auto"><label for="text">Nom:</label></div>
+            <div class="col-12"><input type="text" class="form-control" placeholder="Sidocta" required></div>
+            <br>
+            <div class="col-auto"><label for="text">Prénom:</label></div>
+            <div class="col"><input type="text" class="form-control" placeholder="Franck Neil" required></div>
+            <br>
+            <div class="col-auto text-start"><label for="e-mail">Adresse e-mail:</label></div>
+            <div class="col-12 text-center"><input type="email" class="form-control" placeholder="Nandez@gmail.com"
+                    required>
+            </div>
+            <br>
+            <div class="col-auto text-start"><label for="text">Pays/Région:</label></div>
+            <div class="col-12">
+                <select name="pays" required class="w-100 form-select">
+                    <option value="">Sélectionnez votre pays</option>
+                    <option value="AF">Afghanistan</option>
+                    <option value="AL">Albanie</option>
+                    <option value="DZ">Algérie</option>
+                    <option value="AO">Angola</option>
+                    <option value="AR">Argentine</option>
+                    <option value="AM">Arménie</option>
+                    <option value="AU">Australie</option>
+                    <option value="AT">Autriche</option>
+                    <option value="BE">Belgique</option>
+                    <option value="BR">Brésil</option>
+                    <option value="CA">Canada</option>
+                    <option value="CM">Cameroun</option>
+                    <option value="CN">Chine</option>
+                    <option value="CO">Colombie</option>
+                    <option value="CG">Congo</option>
+                    <option value="CR">Costa Rica</option>
+                    <option value="CI">Côte d’Ivoire</option>
+                    <option value="HR">Croatie</option>
+                    <option value="CU">Cuba</option>
+                    <option value="CY">Chypre</option>
+                    <option value="CZ">Tchéquie</option>
+                    <option value="DK">Danemark</option>
+                    <option value="EG">Égypte</option>
+                    <option value="ET">Éthiopie</option>
+                    <option value="FI">Finlande</option>
+                    <option value="FR">France</option>
+                    <option value="DE">Allemagne</option>
+                    <option value="GH">Ghana</option>
+                    <option value="GR">Grèce</option>
+                    <option value="HT">Haïti</option>
+                    <option value="HU">Hongrie</option>
+                    <option value="IN">Inde</option>
+                    <option value="ID">Indonésie</option>
+                    <option value="IE">Irlande</option>
+                    <option value="IL">Israël</option>
+                    <option value="IT">Italie</option>
+                    <option value="JP">Japon</option>
+                    <option value="JO">Jordanie</option>
+                    <option value="KE">Kenya</option>
+                    <option value="KR">Corée du Sud</option>
+                    <option value="LB">Liban</option>
+                    <option value="LY">Libye</option>
+                    <option value="MX">Mexique</option>
+                    <option value="MA">Maroc</option>
+                    <option value="NL">Pays‑Bas</option>
+                    <option value="NZ">Nouvelle‑Zélande</option>
+                    <option value="NG">Nigéria</option>
+                    <option value="NO">Norvège</option>
+                    <option value="PK">Pakistan</option>
+                    <option value="PA">Panama</option>
+                    <option value="PE">Pérou</option>
+                    <option value="PL">Pologne</option>
+                    <option value="PT">Portugal</option>
+                    <option value="RO">Roumanie</option>
+                    <option value="RU">Russie</option>
+                    <option value="SA">Arabie Saoudite</option>
+                    <option value="RS">Serbie</option>
+                    <option value="SG">Singapour</option>
+                    <option value="ZA">Afrique du Sud</option>
+                    <option value="ES">Espagne</option>
+                    <option value="SE">Suède</option>
+                    <option value="CH">Suisse</option>
+                    <option value="TW">Taïwan</option>
+                    <option value="TH">Thaïlande</option>
+                    <option value="TR">Turquie</option>
+                    <option value="UA">Ukraine</option>
+                    <option value="AE">Émirats arabes unis</option>
+                    <option value="GB">Royaume‑Uni</option>
+                    <option value="US">États‑Unis</option>
+                    <option value="UY">Uruguay</option>
+                    <option value="VE">Venezuela</option>
+                    <option value="VN">Vietnam</option>
+                    <option value="ZM">Zambie</option>
+                    <option value="ZW">Zimbabwe</option>
+                </select>
+
+            </div>
+            <br>
+            <div class="col-auto text-start"><label for="date">Numéro de téléphone:</label></div>
+            <div class="row g-2">
+                <div class="col-6"><select name="indicatif_pays" required class="form-select  col-1">
+                        <option data-countryCode="CM" value="+237">Cameroun (+237)</option>
+                        <option data-countryCode="AF" value="+93">Afghanistan (+93)</option>
+                        <option data-countryCode="AL" value="+355">Albanie (+355)</option>
+                        <option data-countryCode="DZ" value="+213">Algérie (+213)</option>
+                        <option data-countryCode="AD" value="+376">Andorre (+376)</option>
+                        <option data-countryCode="AO" value="+244">Angola (+244)</option>
+                        <option data-countryCode="AI" value="+1264">Anguilla (+1264)</option>
+                        <option data-countryCode="AG" value="+1268">Antigua-et-Barbuda (+1268)</option>
+                        <option data-countryCode="AR" value="+54">Argentine (+54)</option>
+                        <option data-countryCode="AM" value="+374">Arménie (+374)</option>
+                        <option data-countryCode="AU" value="+61">Australie (+61)</option>
+                        <option data-countryCode="AT" value="+43">Autriche (+43)</option>
+                        <option data-countryCode="BH" value="+973">Bahreïn (+973)</option>
+                        <option data-countryCode="BD" value="+880">Bangladesh (+880)</option>
+                        <option data-countryCode="BE" value="+32">Belgique (+32)</option>
+                        <option data-countryCode="BJ" value="+229">Bénin (+229)</option>
+                        <option data-countryCode="BR" value="+55">Brésil (+55)</option>
+                        <option data-countryCode="BG" value="+359">Bulgarie (+359)</option>
+                        <option data-countryCode="CA" value="+1">Canada (+1)</option>
+                        <option data-countryCode="CL" value="+56">Chili (+56)</option>
+                        <option data-countryCode="CN" value="+86">Chine (+86)</option>
+                        <option data-countryCode="CO" value="+57">Colombie (+57)</option>
+                        <option data-countryCode="CR" value="+506">Costa Rica (+506)</option>
+                        <option data-countryCode="HR" value="+385">Croatie (+385)</option>
+                        <option data-countryCode="CU" value="+53">Cuba (+53)</option>
+                        <option data-countryCode="CZ" value="+420">Tchéquie (+420)</option>
+                        <option data-countryCode="DK" value="+45">Danemark (+45)</option>
+                        <option data-countryCode="EG" value="+20">Égypte (+20)</option>
+                        <option data-countryCode="FI" value="+358">Finlande (+358)</option>
+                        <option data-countryCode="FR" value="+33">France (+33)</option>
+                        <option data-countryCode="DE" value="+49">Allemagne (+49)</option>
+                        <option data-countryCode="GR" value="+30">Grèce (+30)</option>
+                        <option data-countryCode="HU" value="+36">Hongrie (+36)</option>
+                        <option data-countryCode="IN" value="+91">Inde (+91)</option>
+                        <option data-countryCode="ID" value="+62">Indonésie (+62)</option>
+                        <option data-countryCode="IE" value="+353">Irlande (+353)</option>
+                        <option data-countryCode="IT" value="+39">Italie (+39)</option>
+                        <option data-countryCode="JP" value="+81">Japon (+81)</option>
+                        <option data-countryCode="MX" value="+52">Mexique (+52)</option>
+                        <option data-countryCode="NL" value="+31">Pays‑Bas (+31)</option>
+                        <option data-countryCode="NZ" value="+64">Nouvelle‑Zélande (+64)</option>
+                        <option data-countryCode="NG" value="+234">Nigéria (+234)</option>
+                        <option data-countryCode="NO" value="+47">Norvège (+47)</option>
+                        <option data-countryCode="PK" value="+92">Pakistan (+92)</option>
+                        <option data-countryCode="PA" value="+507">Panama (+507)</option>
+                        <option data-countryCode="PE" value="+51">Pérou (+51)</option>
+                        <option data-countryCode="PL" value="+48">Pologne (+48)</option>
+                        <option data-countryCode="PT" value="+351">Portugal (+351)</option>
+                        <option data-countryCode="RO" value="+40">Roumanie (+40)</option>
+                        <option data-countryCode="RU" value="+7">Russie (+7)</option>
+                        <option data-countryCode="SA" value="+966">Arabie Saoudite (+966)</option>
+                        <option data-countryCode="RS" value="+381">Serbie (+381)</option>
+                        <option data-countryCode="SG" value="+65">Singapour (+65)</option>
+                        <option data-countryCode="ZA" value="+27">Afrique du Sud (+27)</option>
+                        <option data-countryCode="ES" value="+34">Espagne (+34)</option>
+                        <option data-countryCode="SE" value="+46">Suède (+46)</option>
+                        <option data-countryCode="CH" value="+41">Suisse (+41)</option>
+                        <option data-countryCode="TH" value="+66">Thaïlande (+66)</option>
+                        <option data-countryCode="TR" value="+90">Turquie (+90)</option>
+                        <option data-countryCode="UA" value="+380">Ukraine (+380)</option>
+                        <option data-countryCode="AE" value="+971">Émirats arabes unis (+971)</option>
+                        <option data-countryCode="GB" value="+44">Royaume‑Uni (+44)</option>
+                        <option data-countryCode="US" value="+1">États‑Unis (+1)</option>
+                        <option data-countryCode="UY" value="+598">Uruguay (+598)</option>
+                        <option data-countryCode="VE" value="+58">Venezuela (+58)</option>
+                        <option data-countryCode="VN" value="+84">Vietnam (+84)</option>
+                        <option data-countryCode="ZM" value="+260">Zambie (+260)</option>
+                        <option data-countryCode="ZW" value="+263">Zimbabwe (+263)</option>
+                    </select>
+                </div>
+                <div class="col-6">
+                    <input type="tel" class="form-control" placeholder="658663943" required>
+                </div>
+            </div>
+            <br>
+            <div class="col-auto text-start"><label for="date">Date de réservation:</label></div>
+            <div class="col-12"><input type="date" class="form-control" required></div>
+            <br>
+            <div class="col-auto text-start"><label for="number">Heure de réservation :</label></div>
+            <div class="col-12"><input type="time" class="form-control" required></div>
+            <br>
+            <div class="col-auto text-start"><label for="number">Durée du séjour<i class="text-muted" style="font-family: 'Courier New', Courier, monospace;">(En heures)</i> :</label></div>
+            <div class="col-12"><input type="time" class="form-control" required></div>
+            <br>
+
+            <div style="height: 10px;"></div>
+            <section id="chambres">
+                <div class="container text-center" style="font-size: larger;"><label for="name"
+                        class="fw-bold">Chambres</label></div>
+                <div style="height: 10px;"></div>
+
+                <section>
+                    <div class="row ok mx-2" style="font-size: 18px;">
+                        <div class="container oks border-secondary border rounded ">
+                            <p class="h5 text-center">Chambre n<sup>o</sup>B35</p>
+                            <div style="height: 8px;"></div>
+                            Type: Chambre Deluxe
+                            <div style="height: 13px;"></div>
+                            Place:<i class="fa-solid fa-user"></i>
+                            <div style="height: 13px;"></div>
+                            Avantages du pass: <br><a href="Avantages.html"
+                                class="nav-link text-secondary px-2 fw-bold">Deluxe</a>
+                            <div style="height: 10px;"></div>
+                            Pour une <sup>1</sup>/<sub>2</sub> journée:
+                            <div style="height: 5px;"></div>
+                            <div class="container d-flex gap-3 justify-content-center h5 taille" style="flex-wrap: wrap;"><s>139.645XAF</s> <span
+                                    class="fw-bold">120.320XAF</span> <span class="text-muted" style="font-size: small;">10% de frais en cas d'annulation</span></div>
+                            <div style="height: 3px;"></div>
+
+                            <center><a href="#collapseExample" class="btn btn-secondary bg-gradient mb-1" type="submit"
+                                    data-bs-toggle="collapse" type="button" data-bs-target="#collapseExample1"
+                                    aria-expanded="false" aria-controls="collapseExample">
+                                    Réserver</a>
+                            </center>
+                        </div>
+
+                        <div style="width: 10px;"></div>
+
+                        <div class="container oks border-secondary border rounded">
+                            <p class="h5 text-center">Chambre n<sup>o</sup>B35</p>
+                            <div style="height: 8px;"></div>
+                            Type: Chambre Deluxe
+                            <div style="height: 13px;"></div>
+                            Place:<i class="fa-solid fa-user"></i><i class="fa-solid fa-user"></i>
+                            <div style="height: 13px;"></div>
+                            Avantages du pass: <br><a href="Avantages.html"
+                                class="nav-link text-secondary px-2 fw-bold">Deluxe</a>
+                            <div style="height: 10px;"></div>
+                            Pour une <sup>1</sup>/<sub>2</sub> journée:
+                            <div style="height: 5px;"></div>
+                            <div class="container d-flex gap-3 justify-content-center h5 taille" style="flex-wrap: wrap;"><s>160.490XAF</s> <span
+                                    class="fw-bold">149.990XAF</span>  <span style="font-size: small;" class="text-muted">10% de frais en cas d'annulation</span></div>
+                            <div style="height: 3px;"></div>
+                            <center><a href="#collapseExample" class="btn btn-secondary bg-gradient mb-1" type="submit"
+                                    data-bs-toggle="collapse" type="button" data-bs-target="#collapseExample1"
+                                    aria-expanded="false" aria-controls="collapseExample">
+                                    Réserver</a>
+                            </center>
+                        </div>
+                    </div>
+                </section>
+
+                <div class="collapse border border-secondary my-2 pb-2 rounded px-2" style="font-size: 17.5px;"
+                    id="collapseExample1">
+                    <br>
+                    <p class="text-center fw-bold h5">Comment souhaitez-vous réserver?</p>
+                    <div style="height: 8px;"></div>
+                    <i class="fa-brands fa-cc-amex fa-lg" style="color: #247dc2;"></i><i
+                        class="fa-brands fa-cc-mastercard fa-lg" style="color: #ac6060;"></i><i
+                        class="fa-brands fa-cc-visa fa-lg" style="color: #163ea1;"></i>
+                    <div style="height: 5px;"></div>
+                    <div class="col-auto"><label for="Nom">Nom du titulaire de la carte:</label></div>
+                    <div class="col-auto"><input type="text" class="form-control border-0"></div>
+
+                    <div style="height: 5px;"></div>
+
+                    <div class="col-auto"><label for="Nom">Numéro de carte:</label></div>
+                    <div class="row  rounded bg-light bg-gradient align-items-center"
+                        style="margin-left: 0.1em; margin-right: 0em;">
+                        <div class="col-2"><i class="fa-solid fa-credit-card"></i></div>
+                        <div class="col" style="margin-left: -8%;"> <input type="number"
+                                class="bg-transparent border-0 form-control">
+                        </div>
+                    </div>
+
+                    <div style="height: 5px;"></div>
+
+                    <div class="row">
+                        <div class="col-6"><label for="Nom">Date d'expiration:</label></div>
+                        <div class="col-6"><label for="Nom">CVV</label></div>
+                    </div>
+                    <div class="row">
+                        <div class="col-6"><input type="date" class="form-control border-0" placeholder="MM/AA"></div>
+                        <div class="col-6">
+                            <div class="row rounded bg-light bg-gradient align-items-center"
+                                style="margin-right: 0.1em;">
+                                <div class="col-2"><i class="fa-solid fa-id-card"></i></div>
+                                <div class="col"> <input type="number" class="bg-transparent border-0 form-control">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div style="height: 12px;"></div>
+                    <center><button class="btn btn-secondary bg-gradient" type="submit">Valider</button>
+
+                </div>
+
+            </section>
+
+            <!-- Restaurant -->
+            <section id="restaurant">
+                <div class=" border border-secondary okss rounded mx-auto px-2" style="font-size: 19px;">
+                    <div style="height: 6px;"></div>
+                    <div class="container justify-content-center d-flex text-start" style="font-size: 20px;">
+                        <b><u>Restaurant</u></b></div>
+                    <div style="height: 15px;"></div>
+
+                    <div class="align-items-center container text-center" style="font-size: 18px;"><label
+                            for="number">Nbre
+                            de
+                            personnes:</label><input type="number"
+                            class="form-control text-center rounded bg-transparent border-0 fw-bold"
+                            placeholder="..20personnes..">
+                    </div>
+                    <div style="height: 12px;"></div>
+                    <div class="text-center">Horaires: 08h-22h
+                        <div style="height: 12px;"></div>
+                        A partir de <br>
+                        <b class="px-2">90.000XAF</b><span class="text-muted"><i>par couvert</i></span>
+                    </div>
+                    <div style="height: 5px;"></div>
+                    <center><a href="#collapseExample" class="btn btn-secondary bg-gradient mb-1" type="submit"
+                            data-bs-toggle="collapse" type="button" data-bs-target="#collapseExample2"
+                            aria-expanded="false" aria-controls="collapseExample">
+                            Réserver</a>
+                    </center>
+                </div>
+
+                <div class="collapse border border-secondary my-2 pb-2 rounded px-2" style="font-size: 17.5px;"
+                    id="collapseExample2">
+                    <br>
+                    <p class="text-center fw-bold h5">Comment souhaitez-vous réserver?</p>
+                    <div style="height: 8px;"></div>
+                    <i class="fa-brands fa-cc-amex fa-lg" style="color: #247dc2;"></i><i
+                        class="fa-brands fa-cc-mastercard fa-lg" style="color: #ac6060;"></i><i
+                        class="fa-brands fa-cc-visa fa-lg" style="color: #163ea1;"></i>
+                    <div style="height: 5px;"></div>
+                    <div class="col-auto"><label for="Nom">Nom du titulaire de la carte:</label></div>
+                    <div class="col-auto"><input type="text" class="form-control border-0"></div>
+
+                    <div style="height: 5px;"></div>
+
+                    <div class="col-auto"><label for="Nom">Numéro de carte:</label></div>
+                    <div class="row  rounded bg-light bg-gradient align-items-center"
+                        style="margin-left: 0.1em; margin-right: 0em;">
+                        <div class="col-2"><i class="fa-solid fa-credit-card"></i></div>
+                        <div class="col" style="margin-left: -8%;"> <input type="number"
+                                class="bg-transparent border-0 form-control">
+                        </div>
+                    </div>
+
+                    <div style="height: 5px;"></div>
+
+                    <div class="row">
+                        <div class="col-6"><label for="Nom">Date d'expiration:</label></div>
+                        <div class="col-6"><label for="Nom">CVV</label></div>
+                    </div>
+                    <div class="row">
+                        <div class="col-6"><input type="date" class="form-control border-0" placeholder="MM/AA"></div>
+                        <div class="col-6">
+                            <div class="row rounded bg-light bg-gradient align-items-center"
+                                style="margin-right: 0.1em;">
+                                <div class="col-2"><i class="fa-solid fa-id-card"></i></div>
+                                <div class="col"> <input type="number" class="bg-transparent border-0 form-control">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div style="height: 12px;"></div>
+                    <center><button class="btn btn-secondary bg-gradient" type="submit">Valider</button>
+                </div>
+
+            </section>
+
+
+            <section id="spa">
+                <!-- SPA -->
+                <div class="container" style="font-size: 24px; padding-left: 30%; font-family: 'Times New Roman', Times, serif;"><b>Spa</b></div>
+                <div style="height: 10px;"></div>
+                <section>
+                <div class="row ok mx-2" style="font-size: 18px;">
+                    <div class="container  border-secondary oksss border rounded text-center"
+                        style="font-family: 'Courier New', Courier, monospace;">
+                        <p class="h5 text-center">Soins</p>
+                        <div style="height: 8px;"></div>
+                        Type: Essentiel
+                        <div style="height: 13px;"></div>
+                        Une paranthèse de détente pure
+                        <div style="height: 13px;"></div>
+                        Durée maîtrisée
+                        <div style="height: 13px;"></div>
+                        Produits soigneusement sélectionnés
+                        <div style="height: 13px;"></div>
+                        Idéal pour une première expérience
+                        <div style="height: 10px;"></div>
+                        <div class="container d-flex gap-3 justify-content-center h5" style="flex-wrap: wrap;"><s>22.500XAF</s> <span
+                                class="fw-bold">20.000XAF</span> <span style="font-size: small;" class="text-muted">10% de frais en cas d'annulation</span></div>
+                        <div style="height: 3px;"></div>
+
+                        <center><a href="#collapseExample" class="btn btn-secondary bg-gradient mb-1" type="submit"
+                                data-bs-toggle="collapse" type="button" data-bs-target="#collapseExample3"
+                                aria-expanded="false" aria-controls="collapseExample">
+                                Réserver</a>
+                        </center>
+                    </div>
+
+
+                    <div style="width: 10px;"></div>
+
+                    <div class="container  border-secondary border rounded oksss text-center"
+                        style="font-family: 'Courier New', Courier, monospace;">
+                        <p class="h5 text-center">Soins</p>
+                        <div style="height: 8px;"></div>
+                        Type: Confort
+                        <div style="height: 13px;"></div>
+                        Une immersion bien-être approfondie
+                        <div style="height: 13px;"></div>
+                        Temps prolongé
+                        <div style="height: 13px;"></div>
+                        Produits premium aux actifs ciblés
+                        <div style="height: 13px;"></div>
+                        Le choix préféré de nos clients
+                        <div style="height: 10px;"></div>
+                        <div class="container d-flex gap-3 justify-content-center h5" style="flex-wrap: wrap;"><s>47.000XAF</s> <span
+                                class="fw-bold">44.990XAF</span> <span style="font-size: small;" class="text-muted">10% de frais en cas d'annulation</span></div>
+                        <div style="height: 3px;"></div>
+                        <center><a href="#collapseExample" class="btn btn-secondary bg-gradient mb-1" type="submit"
+                                data-bs-toggle="collapse" type="button" data-bs-target="#collapseExample3"
+                                aria-expanded="false" aria-controls="collapseExample">
+                                Réserver</a>
+                        </center>
+                    </div>
+
+                    <div style="width: 10px;"></div>
+
+                    <div class="container  border-secondary border rounded oksss text-center"
+                        style="font-family: 'Courier New', Courier, monospace;">
+                        <p class="h5 text-center">Soins</p>
+                        <div style="height: 8px;"></div>
+                        Type: Prestige
+                        <div style="height: 13px;"></div>
+                        Une expérience signature sur mesure
+                        <div style="height: 13px;"></div>
+                        Temps suspendu
+                        <div style="height: 13px;"></div>
+                        Produits personnalisés pour votre expérience
+                        <div style="height: 13px;"></div>
+                        Pensé pour une clientèle exclusive
+                        <div style="height: 10px;"></div>
+                        <div class="container d-flex gap-3 justify-content-center h5" style="flex-wrap: wrap;"><s>65.000XAF</s> <span
+                                class="fw-bold">60.000XAF</span> <span style="font-size: small;" class="text-muted">10% de frais en cas d'annulation</span></div>
+                        <div style="height: 3px;"></div>
+                        <center><a href="#collapseExample" class="btn btn-secondary bg-gradient mb-1" type="submit"
+                                data-bs-toggle="collapse" type="button" data-bs-target="#collapseExample3"
+                                aria-expanded="false" aria-controls="collapseExample">
+                                Réserver</a>
+                        </center>
+                    </div>
+            </section>
+
+            <div class="collapse border border-secondary my-2 pb-2 rounded px-2" style="font-size: 17.5px;"
+                id="collapseExample3">
+                <br>
+                <p class="text-center fw-bold h5">Comment souhaitez-vous réserver?</p>
+                <div style="height: 8px;"></div>
+                <i class="fa-brands fa-cc-amex fa-lg" style="color: #247dc2;"></i><i
+                    class="fa-brands fa-cc-mastercard fa-lg" style="color: #ac6060;"></i><i
+                    class="fa-brands fa-cc-visa fa-lg" style="color: #163ea1;"></i>
+                <div style="height: 5px;"></div>
+                <div class="col-auto"><label for="Nom">Nom du titulaire de la carte:</label></div>
+                <div class="col-auto"><input type="text" class="form-control border-0"></div>
+
+                <div style="height: 5px;"></div>
+
+                <div class="col-auto"><label for="Nom">Numéro de carte:</label></div>
+                <div class="row  rounded bg-light bg-gradient align-items-center"
+                    style="margin-left: 0.1em; margin-right: 0em;">
+                    <div class="col-2"><i class="fa-solid fa-credit-card"></i></div>
+                    <div class="col" style="margin-left: -8%;"> <input type="number"
+                            class="bg-transparent border-0 form-control">
+                    </div>
+                </div>
+
+                <div style="height: 5px;"></div>
+
+                <div class="row">
+                    <div class="col-6"><label for="Nom">Date d'expiration:</label></div>
+                    <div class="col-6"><label for="Nom">CVV</label></div>
+                </div>
+                <div class="row">
+                    <div class="col-6"><input type="date" class="form-control border-0" placeholder="MM/AA"></div>
+                    <div class="col-6">
+                        <div class="row rounded bg-light bg-gradient align-items-center" style="margin-right: 0.1em;">
+                            <div class="col-2"><i class="fa-solid fa-id-card"></i></div>
+                            <div class="col"> <input type="number" class="bg-transparent border-0 form-control">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div style="height: 12px;"></div>
+                <center><button class="btn btn-secondary bg-gradient" type="submit">Valider</button>
+
+            </div>
+            </section>
+
+            <!-- Salle -->
+
+            <section id="salle">
+                <div class="mx-auto border border-secondary okssss rounded pb-1" style="font-size: 19px;">
+                    <div class="container d-flex justify-content-center pt-2" style="font-size: 21px;"><b><u>Salle De
+                                Fête</u></b></div>
+                    <div style="height: 10px;"></div>
+                    <div class="text-center pt-3"><i class="fa-regular fa-square fa-2xl" style="color: #7a7e85;"></i>
+                        <br><b>450m<sup>2</sup></b>
+                    </div>
+                    <div style="height: 12px;"></div>
+                    <div class=" align-items-center container text-center gap-0 mt-1">
+                        <label for="text">Evènement:</label> <br>
+                        <select name="Event" id="" class="form-select bg-transparent border-0 text-center"
+                            style="font-size: 17.25px; font-weight: bold;">
+                            <option value="Event"><i>Event</i></option>
+                            <option value="Mariage">Mariage</option>
+                            <option value="Anniversaire">Anniversaire</option>
+                            <option value="Conférence">Conférence</option>
+                        </select>
+                    </div>
+                    <div style="height: 12px;"></div>
+                    <div class=" align-items-center container text-center" style="font-size: 18px;"><label
+                            for="number">Nbre
+                            de
+                            personnes:</label><input type="number"
+                            class="form-control bg-transparent border-0 fw-bold text-center"
+                            placeholder="...20personnes..."></div>
+                    <div style="height: 12px;"></div>
+                    <div class="text-center">
+                        Tarif indicatif:<br>
+                        <b class="px-2">500.000XAF</b><span class="text-muted"><i>par heure</i></span>
+                    </div>
+                    <div style="height: 8px;"></div>
+                    <center><a href="#collapseExample" class="btn btn-secondary bg-gradient mb-1" type="submit"
+                            data-bs-toggle="collapse" type="button" data-bs-target="#collapseExample4"
+                            aria-expanded="false" aria-controls="collapseExample">
+                            Réserver</a>
+                    </center>
+                </div>
+
+                <div class="collapse border border-secondary my-2 pb-2 rounded px-2" style="font-size: 17.5px;"
+                    id="collapseExample4">
+                    <br>
+                    <p class="text-center fw-bold h5">Comment souhaitez-vous réserver?</p>
+                    <div style="height: 8px;"></div>
+                    <i class="fa-brands fa-cc-amex fa-lg" style="color: #247dc2;"></i><i
+                        class="fa-brands fa-cc-mastercard fa-lg" style="color: #ac6060;"></i><i
+                        class="fa-brands fa-cc-visa fa-lg" style="color: #163ea1;"></i>
+                    <div style="height: 5px;"></div>
+                    <div class="col-auto"><label for="Nom">Nom du titulaire de la carte:</label></div>
+                    <div class="col-auto"><input type="text" class="form-control border-0"></div>
+
+                    <div style="height: 5px;"></div>
+
+                    <div class="col-auto"><label for="Nom">Numéro de carte:</label></div>
+                    <div class="row  rounded bg-light bg-gradient align-items-center"
+                        style="margin-left: 0.1em; margin-right: 0em;">
+                        <div class="col-2"><i class="fa-solid fa-credit-card"></i></div>
+                        <div class="col" style="margin-left: -8%;"> <input type="number"
+                                class="bg-transparent border-0 form-control">
+                        </div>
+                    </div>
+
+                    <div style="height: 5px;"></div>
+
+                    <div class="row">
+                        <div class="col-6"><label for="Nom">Date d'expiration:</label></div>
+                        <div class="col-6"><label for="Nom">CVV</label></div>
+                    </div>
+                    <div class="row">
+                        <div class="col-6"><input type="date" class="form-control border-0" placeholder="MM/AA"></div>
+                        <div class="col-6">
+                            <div class="row rounded bg-light bg-gradient align-items-center"
+                                style="margin-right: 0.1em;">
+                                <div class="col-2"><i class="fa-solid fa-id-card"></i></div>
+                                <div class="col"> <input type="number" class="bg-transparent border-0 form-control">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div style="height: 12px;"></div>
+                    <center><button class="btn btn-secondary bg-gradient" type="submit">Valider</button>
+                </div>
+
+            </section>
+        </form>
+    </main>
+
+
+    <BR></BR><br>
+
+    <footer>
+        <div class=" d-flex text-muted">
+            <span class="col-6 text-center">Mentions légales</span>
+            <span class="col-6 text-center">Account&Privacy</span>
+        </div>
+        <div style="height: 5px;"></div>
+        <div class=" d-flex text-muted align-items-center">
+            <span class="col-12 text-center">Politique de confidentialité</span>
+        </div>
+        <div style="height: 5px;"></div>
+        <div class=" d-flex text-muted">
+            <span class="col-6 text-center">&copy;FN Hôtel</span>
+            <span class="col-6 text-center fw-bold "><a href="Services(deluxe).html" class="nav-link">Réserver</a></span>
+        </div>
+        <div style="height: 5px;"></div>
+        <div class="container rx  text-muted">
+            <a href="https://wa.me/237658663943" class="nav-link "><i class="fa-brands fa-whatsapp fa-xl"></i></a>
+            <a href="https://instagram.com/f.neil10" class="nav-link "><i class="fa-brands fa-instagram fa-xl"></i></a>
+            <a href="mailto:sidoctafr@gmail.com" class="nav-link "><i class="fa-brands fa-google fa-lg"></i></a>
+        </div>
+    </footer>
+
+    <script>
+        // Récupère la valeur de "source" dans l'URL
+        const params = new URLSearchParams(window.location.search);
+        const source = params.get('source'); // ex: "restaurant"
+
+        // Liste de toutes les sections
+        const sections = ['chambres', 'restaurant', 'salle', 'spa'];
+
+        sections.forEach(id => {
+            const el = document.getElementById(id);
+            if (!el) return;
+
+            // Si l'URL correspond à la section, on l'affiche, sinon on la masque
+            if (id === source) {
+                el.style.display = 'block';
+            } else {
+                el.style.display = 'none';
+            }
+        });
+    </script>
+
+</body>
+
+</html>

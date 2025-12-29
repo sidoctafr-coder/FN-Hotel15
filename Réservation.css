@@ -1,0 +1,173 @@
+
+body {
+    grid-template-areas: "header header header"
+        "main main main"
+        "footer footer footer";
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: auto;
+    background-color: #eae1cb;
+    overflow-x: hidden;
+    margin: 0;
+    width: 100%;
+    font-size: 17px;
+}
+html, body{
+    overflow-x: hidden;
+}
+.police{
+    font-family: 'Arial', sans-serif;
+}   
+header {
+    grid-area: header;
+    background-color: #77a8a8;
+}
+
+main {
+    grid-area: main;
+}
+.logo {
+    width: 10px;
+    object-fit: cover;
+    height: 5px;
+}
+@media (max-width: 400px) {
+    .navbar-expand {
+        font-size: 16px;
+    }
+}
+@media (min-width: 399px) {
+    .notremove{
+        font-size: 0px;
+        width: 0px;
+    }
+}
+
+@media (min-width: 401px) {
+    .navbar-expand {
+        font-size: 16px;
+    }
+}
+@media (min-width: 401px) {
+    .logo {
+        width: auto;
+        height: auto;
+    }
+    .notremove{
+        font-size: 0px;
+        width: 0px;
+    }
+}
+
+@media (max-width: 355px) {
+    .remove{
+        font-size: 0px;
+        width: 0px;
+    }
+    .navbar-expand{
+        gap: 5px;
+    }
+    .taille{
+        font-size: 16px;
+    }
+}
+@media (max-width: 500px) {
+.oks{
+width: 75%;
+}
+}
+@media (min-width: 500px) {
+.oks{
+text-align: center;
+width: 50%;
+}
+}
+@media (min-width: 650px) {
+.oks{
+text-align: center;
+width: 40%;
+}
+}
+@media (max-width: 500px) {
+.okss{
+    width: 100%;
+}
+}
+@media (min-width: 500px) {
+.okss{
+    width: 80%;
+}
+}
+@media (min-width: 700px) {
+.okss{
+    width: 50%;
+}
+}
+
+@media (min-width: 650px) and (max-width: 749px){
+.oksss{
+    width: 55%;
+}
+}
+@media (max-width: 650px) {
+.oksss{
+    width: 75%;
+}
+}
+@media (min-width: 750px) {
+.oksss{
+    width: 40%;
+}
+}
+@media (min-width: 750px) {
+.okssss{
+    width: 50%;
+}
+}
+@media (max-width: 749px) {
+.okssss{
+    width: 80%;
+}
+}
+@media (max-width: 330px) {
+    .remove{
+        font-size: 0px;
+        width: 0px;
+    }
+    .notremove{
+        font-size: 0px;
+        width: 0px;
+    }
+    .navbar-expand{
+        gap: 10px;
+    }
+}
+@media (min-width: 366px) and (max-width: 400px) {
+    .remove{
+        font-size: 0px;
+        width: 0px;
+    }
+}
+footer {
+    grid-area: footer;
+    background-color: #77a8a8;
+}
+.rx{
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    gap: 20px;
+    justify-content: center;
+}
+section{
+    overflow: auto;
+    scrollbar-width: none;
+}
+.ok{
+    display: flex;
+    flex-wrap: nowrap;
+}
+@media (min-width: 1000px) {
+section:hover{
+    scrollbar-width: auto;
+}
+}
+
