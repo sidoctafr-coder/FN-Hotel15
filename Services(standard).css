@@ -176,6 +176,14 @@ html, body{
     .vr{
         height: 200px !important;
     }
+    .prix1{
+        justify-content: center !important;
+        font-size: 20px !important;
+    }
+    .prix2{
+        justify-content: center !important;
+        font-size: 13px !important;
+    }
 }
 @media (min-width: 1000px) {
 .card{
