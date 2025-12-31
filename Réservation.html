@@ -56,19 +56,19 @@
         <br>
         <form class="form-control rounded border-0" style="background-color: #eae1cb;">
             <div class="col-auto"><label for="text">Nom:</label></div>
-            <div class="col-12"><input type="text" class="form-control" placeholder="Sidocta" required></div>
+            <div class="col-12"><input type="text" class="form-control" name="Nom:" placeholder="Sidocta" required></div>
             <br>
             <div class="col-auto"><label for="text">Prénom:</label></div>
-            <div class="col"><input type="text" class="form-control" placeholder="Franck Neil" required></div>
+            <div class="col"><input type="text" class="form-control" name="Prénom:" placeholder="Franck Neil" required></div>
             <br>
             <div class="col-auto text-start"><label for="e-mail">Adresse e-mail:</label></div>
-            <div class="col-12 text-center"><input type="email" class="form-control" placeholder="Nandez@gmail.com"
+            <div class="col-12 text-center"><input type="email" name="Adresse e-mail:" class="form-control" placeholder="Nandez@gmail.com"
                     required>
             </div>
             <br>
             <div class="col-auto text-start"><label for="text">Pays/Région:</label></div>
             <div class="col-12">
-                <select name="pays" required class="w-100 form-select">
+                <select name="Pays:" required class="w-100 form-select">
                     <option value="">Sélectionnez votre pays</option>
                     <option value="AF">Afghanistan</option>
                     <option value="AL">Albanie</option>
@@ -150,7 +150,7 @@
             <br>
             <div class="col-auto text-start"><label for="date">Numéro de téléphone:</label></div>
             <div class="row g-2">
-                <div class="col-6"><select name="indicatif_pays" required class="form-select  col-1">
+                <div class="col-6"><select name="Indicatif_pays:" required class="form-select  col-1">
                         <option data-countryCode="CM" value="+237">Cameroun (+237)</option>
                         <option data-countryCode="AF" value="+93">Afghanistan (+93)</option>
                         <option data-countryCode="AL" value="+355">Albanie (+355)</option>
@@ -222,18 +222,18 @@
                     </select>
                 </div>
                 <div class="col-6">
-                    <input type="tel" class="form-control" placeholder="658663943" required>
+                    <input type="tel" class="form-control" name="Num-tél:" placeholder="658663943" required>
                 </div>
             </div>
             <br>
             <div class="col-auto text-start"><label for="date">Date de réservation:</label></div>
-            <div class="col-12"><input type="date" class="form-control" required></div>
+            <div class="col-12"><input type="date" name="Date de réservation:" class="form-control" required></div>
             <br>
             <div class="col-auto text-start"><label for="number">Heure de réservation :</label></div>
-            <div class="col-12"><input type="time" class="form-control" required></div>
+            <div class="col-12"><input type="time" name="Heure de réservation:" class="form-control" required></div>
             <br>
             <div class="col-auto text-start"><label for="number">Durée du séjour<i class="text-muted" style="font-family: 'Courier New', Courier, monospace;">(En heures)</i> :</label></div>
-            <div class="col-12"><input type="time" class="form-control" required></div>
+            <div class="col-12"><input type="time" name="Durée du séjour:" class="form-control" required></div>
             <br>
 
             <div style="height: 10px;"></div>
