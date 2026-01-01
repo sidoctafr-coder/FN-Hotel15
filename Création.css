@@ -1,0 +1,153 @@
+body {
+    grid-template-areas: "header header header"
+        "main main main"
+        "footer footer footer";
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: auto;
+    background-color: #eae1cb;
+    overflow-x: hidden;
+    margin: 0;
+    width: 100%;
+}
+html, body{
+    overflow-x: hidden;
+}
+.formulaire{
+  background: transparent;
+  backdrop-filter: blur(10px);
+  margin-top: 8vh;
+}
+
+.btn:hover{
+    transform: scale(1.1);
+    animation-duration: 5ms;
+}
+.navbar-toggler-icon:hover{
+    transform: scale(1.05);
+}
+
+header {
+    grid-area: header;
+    background-color: #77a8a8;
+}
+
+main {
+    grid-area: main;
+}
+.logo {
+    width: auto;
+    object-fit: contain;
+    height: auto;
+}
+@media (max-width: 400px) {
+    .navbar-expand {
+        font-size: 16px;
+    }
+}
+@media (min-width: 399px) {
+    .notremove{
+        font-size: 0px;
+        width: 0px;
+    }
+}
+
+@media (min-width: 401px) {
+    .navbar-expand {
+        font-size: 16px;
+    }
+}
+@media (min-width: 401px) {
+    .logo {
+        width: auto;
+        height: auto;
+    }
+    .notremove{
+        font-size: 0px;
+        width: 0px;
+    }
+}
+
+@media (max-width: 365px) {
+    .remove{
+        font-size: 0px;
+        width: 0px;
+    }
+}
+@media (max-width: 350px) {
+    .remove{
+        font-size: 0px;
+        width: 0px;
+    }
+    .notremove{
+        font-size: 0px;
+        width: 0px;
+    }
+    .navbar-expand{
+        gap: 10px;
+    }
+}
+@media (max-width: 500px) {
+.colonne{
+    padding: 0.5rem;
+}
+.maNav{
+    height: 70px;
+}
+.formulaire{
+    width: 90%;
+    padding: 0;
+}
+}
+@media (min-width: 500px) {
+    .ul{
+          display: flex;
+          gap: 25px;
+    }
+    .formulaire{
+        width: 80%;
+    }
+    .colonne{
+        padding: 0.5rem;
+    }
+    .no-gap{
+       margin-left: -25px;
+    }
+    .maNav{
+        height: 60px;
+    }
+    .logo{
+        height: 50px;
+    }
+    .offcanvas{
+        width: 40% !important;
+    }
+}
+@media (max-width: 355px) {
+.ul{
+    margin-right: 10px;
+}
+}
+.h5{
+    font-size: 20px;
+}
+footer {
+    grid-area: footer;
+    background-color: #77a8a8;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    margin-top: auto;
+    margin-bottom: 0px;
+    }
+    .page{
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    overflow-y: scroll;
+}
+.rx{
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    gap: 20px;
+    justify-content: center;
+}
